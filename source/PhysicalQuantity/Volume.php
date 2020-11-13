@@ -17,6 +17,7 @@ class Volume extends AbstractPhysicalQuantity
         $cubicmeter->addAlias('cubic meters');
         $cubicmeter->addAlias('cubic metre');
         $cubicmeter->addAlias('cubic metres');
+        $cubicmeter->addAlias('MTQ');
         static::addUnit($cubicmeter);
 
         // Cubic millimeter
@@ -35,6 +36,7 @@ class Volume extends AbstractPhysicalQuantity
         $newUnit->addAlias('cubic centimeters');
         $newUnit->addAlias('cubic centimetre');
         $newUnit->addAlias('cubic centimetres');
+        $newUnit->addAlias('CMQ');
         static::addUnit($newUnit);
 
         // Cubic decimeter
@@ -44,6 +46,7 @@ class Volume extends AbstractPhysicalQuantity
         $newUnit->addAlias('cubic decimeters');
         $newUnit->addAlias('cubic decimetre');
         $newUnit->addAlias('cubic decimetres');
+        $newUnit->addAlias('DMQ');
         static::addUnit($newUnit);
 
         // Cubic kilometer
@@ -60,6 +63,7 @@ class Volume extends AbstractPhysicalQuantity
         $newUnit->addAlias('ft³');
         $newUnit->addAlias('cubic foot');
         $newUnit->addAlias('cubic feet');
+        $newUnit->addAlias('FTQ');
         static::addUnit($newUnit);
 
         // Cubic inch
@@ -67,6 +71,7 @@ class Volume extends AbstractPhysicalQuantity
         $newUnit->addAlias('in³');
         $newUnit->addAlias('cubic inch');
         $newUnit->addAlias('cubic inches');
+        $newUnit->addAlias('INQ');
         static::addUnit($newUnit);
 
         // Cubic yard
@@ -82,6 +87,7 @@ class Volume extends AbstractPhysicalQuantity
         $newUnit->addAlias('milliliters');
         $newUnit->addAlias('millilitre');
         $newUnit->addAlias('millilitres');
+        $newUnit->addAlias('MLT');
         static::addUnit($newUnit);
 
         // Centiliters
@@ -90,6 +96,7 @@ class Volume extends AbstractPhysicalQuantity
         $newUnit->addAlias('centiliters');
         $newUnit->addAlias('centilitre');
         $newUnit->addAlias('centilitres');
+        $newUnit->addAlias('CLT');
         static::addUnit($newUnit);
 
         // Deciliter
@@ -98,6 +105,7 @@ class Volume extends AbstractPhysicalQuantity
         $newUnit->addAlias('deciliters');
         $newUnit->addAlias('decilitre');
         $newUnit->addAlias('decilitres');
+        $newUnit->addAlias('DLT');
         static::addUnit($newUnit);
 
         // Liter
@@ -106,6 +114,7 @@ class Volume extends AbstractPhysicalQuantity
         $newUnit->addAlias('liters');
         $newUnit->addAlias('litre');
         $newUnit->addAlias('litres');
+        $newUnit->addAlias('LTR');
         static::addUnit($newUnit);
 
         // Decaliter

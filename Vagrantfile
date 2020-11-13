@@ -12,7 +12,7 @@ Vagrant.configure(2) do |config|
         override.vm.box = "ubuntu/trusty64"
         vb.memory = "1024" # in MB
 
-        override.vm.network "private_network", type: "dhcp"
+        #override.vm.network "private_network", type: "dhcp"
         override.ssh.forward_agent = true
     end
 

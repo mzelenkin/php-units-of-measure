@@ -17,6 +17,7 @@ class Mass extends AbstractPhysicalQuantity
         $kilogram = UnitOfMeasure::nativeUnitFactory('kg');
         $kilogram->addAlias('kilogram');
         $kilogram->addAlias('kilograms');
+        $kilogram->addAlias('KGM');
         static::addUnit($kilogram);
 
         static::addMissingSIPrefixedUnits(
@@ -29,12 +30,16 @@ class Mass extends AbstractPhysicalQuantity
             ]
         );
 
+        // add GS1 units for gram
+        static::getUnit('g')->addAlias('GRM');
+
         // Tonne (metric)
         $newUnit = UnitOfMeasure::linearUnitFactory('t', 1e3);
         $newUnit->addAlias('ton');
         $newUnit->addAlias('tons');
         $newUnit->addAlias('tonne');
         $newUnit->addAlias('tonnes');
+        $newUnit->addAlias('TNE');
         static::addUnit($newUnit);
 
         // Pound
@@ -42,6 +47,7 @@ class Mass extends AbstractPhysicalQuantity
         $newUnit->addAlias('lbs');
         $newUnit->addAlias('pound');
         $newUnit->addAlias('pounds');
+        $newUnit->addAlias('LBR');
         static::addUnit($newUnit);
 
         // Ounce

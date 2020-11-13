@@ -59,6 +59,10 @@ class AreaTest extends AbstractPhysicalQuantityTestCase
         'ac',
         'acre',
         'acres',
+        'MTK',
+        'CMK',
+        'YDX',
+        'FTK'
     ];
 
     protected function instantiateTestQuantity()

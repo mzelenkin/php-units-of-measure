@@ -19,6 +19,7 @@ class Area extends AbstractPhysicalQuantity
         $metersquared->addAlias('meters squared');
         $metersquared->addAlias('metre squared');
         $metersquared->addAlias('metres squared');
+        $metersquared->addAlias('MTK');
         static::addUnit($metersquared);
 
         // Millimeter squared
@@ -41,6 +42,7 @@ class Area extends AbstractPhysicalQuantity
         $newUnit->addAlias('centimeters squared');
         $newUnit->addAlias('centimetre squared');
         $newUnit->addAlias('centimetres squared');
+        $newUnit->addAlias('CMK');
         static::addUnit($newUnit);
 
         // Decimeter squared
@@ -72,6 +74,7 @@ class Area extends AbstractPhysicalQuantity
         $newUnit->addAlias('square foot');
         $newUnit->addAlias('square feet');
         $newUnit->addAlias('feet squared');
+        $newUnit->addAlias('FTK');
         static::addUnit($newUnit);
 
         // Inch squared
@@ -99,6 +102,7 @@ class Area extends AbstractPhysicalQuantity
         $newUnit->addAlias('yards squared');
         $newUnit->addAlias('square yard');
         $newUnit->addAlias('square yards');
+        $newUnit->addAlias('YDX');
         static::addUnit($newUnit);
 
         // Are

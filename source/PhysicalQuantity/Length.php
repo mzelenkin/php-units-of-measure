@@ -19,6 +19,7 @@ class Length extends AbstractPhysicalQuantity
         $meter->addAlias('meters');
         $meter->addAlias('metre');
         $meter->addAlias('metres');
+        $meter->addAlias('MTR');
         static::addUnit($meter);
 
         static::addMissingSIPrefixedUnits(
@@ -33,28 +34,35 @@ class Length extends AbstractPhysicalQuantity
             ]
         );
 
+        static::getUnit('mm')->addAlias('MMT');
+        static::getUnit('cm')->addAlias('CMT');
+
         // Foot
         $newUnit = UnitOfMeasure::linearUnitFactory('ft', 0.3048);
         $newUnit->addAlias('foot');
         $newUnit->addAlias('feet');
+        $newUnit->addAlias('FOT');
         static::addUnit($newUnit);
 
         // Inch
         $newUnit = UnitOfMeasure::linearUnitFactory('in', 0.0254);
         $newUnit->addAlias('inch');
         $newUnit->addAlias('inches');
+        $newUnit->addAlias('INH');
         static::addUnit($newUnit);
 
         // Mile
         $newUnit = UnitOfMeasure::linearUnitFactory('mi', 1609.344);
         $newUnit->addAlias('mile');
         $newUnit->addAlias('miles');
+        $newUnit->addAlias('SMI');
         static::addUnit($newUnit);
 
         // Yard
         $newUnit = UnitOfMeasure::linearUnitFactory('yd', 0.9144);
         $newUnit->addAlias('yard');
         $newUnit->addAlias('yards');
+        $newUnit->addAlias('YD');
         static::addUnit($newUnit);
 
         // Nautical mile
